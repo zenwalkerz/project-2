@@ -15,6 +15,25 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/colors/leaf.css">
   <link rel="preload" href="./assets/css/fonts/urbanist.css" as="style" onload="this.rel='stylesheet'">
+  <style>
+    @media (min-width: 992px) {
+      .navbar-nav>.nav-item>.nav-link {
+        position: relative;
+      }
+
+      .navbar-nav>.nav-item+.nav-item>.nav-link:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        top: 50%;
+        left: -2px;
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -37,19 +56,22 @@
             <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
               <ul class="navbar-nav">
                 <li class="nav-item dropdown dropdown-mega">
-                  <a class="nav-link" href="#homes">Homes</a>
+                  <a class="nav-link scroll active" href="#homes">Homes</a>
                 </li>
                 <li class="nav-item dropdown dropdown-mega">
-                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link scroll" href="#about">About</a>
                 </li>
                 <li class="nav-item dropdown dropdown-mega">
-                  <a class="nav-link" href="#video">Video</a>
+                  <a class="nav-link scroll" href="#video">Video</a>
                 </li>
                 <li class="nav-item dropdown dropdown-mega">
-                  <a class="nav-link" href="#profil">Profil</a>
+                  <a class="nav-link scroll" href="#profil">Profil</a>
                 </li>
                 <li class="nav-item dropdown dropdown-mega">
-                  <a class="nav-link" href="#blog">Blog</a>
+                  <a class="nav-link scroll" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item dropdown dropdown-mega">
+                  <a class="nav-link scroll" href="#blog">Blog</a>
                 </li>
               </ul>
               <!-- /.navbar-nav -->
@@ -527,7 +549,7 @@
     </section>
     <!-- /section -->
     <section class="wrapper image-wrapper bg-image bg-overlay text-white" data-image-src="./assets/img/photos/bg33.jpg">
-      <div class="container py-14 py-md-17 text-center">
+      <div class="container py-30 py-md-17 text-center">
         <div class="row">
           <div class="col-xl-10 col-xxl-8 mx-auto text-center">
             <i class="icn-flower text-white fs-30 opacity-50"></i>
@@ -545,13 +567,13 @@
     <section id="profil" class="wrapper bg-light">
       <div class="container pt-12 pt-md-14 pb-14 pb-md-16">
         <div class="row gx-md-8 gx-xl-12 gy-6 align-items-center">
-          <div class="col-md-8 col-lg-6 mx-auto">
-            <div class="img-mask mask-1"><img src="./assets/img/rifa.jpg" srcset="./assets/img/rifa.jpg 2x" alt="" />
-            </div>
+          <div class="col-md-8 col-lg-6 order-lg-2 mx-auto">
+            <div class="img-mask mask-2"><img src="./assets/img/photos/about30.jpg" alt="" /></div>
           </div>
           <!--/column -->
           <div class="col-lg-6">
-            <h2 class="display-5 mb-5">Hi, I'm Rifa, a documentary wedding and couples photographer currently working
+            <h2 class="display-5 mb-5">Hi, I'm Caitylin, a documentary wedding and couples photographer currently
+              working
               from and based in London.</h2>
             <p class="mb-6">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras
               justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque
@@ -579,7 +601,7 @@
           <!--/column -->
         </div>
         <!-- /.row -->
-        <div class="row gx-md-8 gx-xl-12 gy-6 mt-8">
+        <div class="row gx-md-8 gx-xl-16 gy-6 mt-8">
           <div class="col-lg-4">
             <h3>My Skills</h3>
             <p>Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna vel consectetur purus sit
@@ -655,6 +677,74 @@
           <!-- /column -->
         </div>
         <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section id="projects" class="wrapper bg-gradient-blend">
+      <div class="container pt-16 pt-md-18 pb-16 pb-md-18 pb-lg-20">
+        <div class="row mt-10">
+          <div class="col-md-10 col-lg-9 col-xxl-8 mx-auto text-center">
+            <h1 class="text-uppercase text-muted px-xl-12"><em>My Other Project</em></h1>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+      <div class="overflow-hidden">
+        <div class="divider text-light mx-n2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 92.26">
+            <path fill="currentColor"
+              d="M1206,21.2c-60-5-119-36.92-291-5C772,51.11,768,48.42,708,43.13c-60-5.68-108-29.92-168-30.22-60,.3-147,27.93-207,28.23-60-.3-122-25.94-182-36.91S30,5.93,0,16.2V92.26H1440v-87l-30,5.29C1348.94,22.29,1266,26.19,1206,21.2Z" />
+          </svg>
+        </div>
+      </div>
+      <!-- /.overflow-hidden -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper">
+      <div class="container pt-12 pt-md-0 pb-16 pb-md-18">
+        <div class="grid grid-view projects-masonry mt-md-n20 mt-lg-n22 mb-5">
+          <div class="row g-8 g-lg-10 isotope">
+            <div class="project item col-md-6 col-xl-6 workshop">
+              <div class="card shadow-lg">
+                <figure class="card-img-top itooltip itooltip-aqua"
+                  title='<h5 class="mb-0">Click to see the project</h5>'><a href="./project-2.html"> <img
+                      src="./assets/img/project-1.jpg" alt="" /></a></figure>
+                <div class="card-body p-7">
+                  <div class="post-header">
+                    <div class="post-category text-line mb-2 text-aqua">Winsel</div>
+                    <h3 class="mb-0">Company Profile</h3>
+                  </div>
+                  <!-- /.post-header -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.project -->
+            <div class="project item col-md-6 col-xl-6 product">
+              <div class="card shadow-lg">
+                <figure class="card-img-top itooltip itooltip-purple"
+                  title='<h5 class="mb-0">Click to see the project</h5>'><a href="./project-3.html"> <img
+                      src="./assets/img/project-3.jpg" alt="" /></a></figure>
+                <div class="card-body p-7">
+                  <div class="post-header">
+                    <div class="post-category text-line mb-2 text-purple">Winsel Startup</div>
+                    <h3 class="mb-0">Startup Marketplace</h3>
+                  </div>
+                  <!-- /.post-header -->
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.project -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.grid -->
       </div>
       <!-- /.container -->
     </section>
@@ -935,11 +1025,11 @@
           <div class="widget">
             <h4 class="widget-title mb-3 text-white">Learn More</h4>
             <ul class="list-unstyled mb-0">
-              <li><a href="#">Homes</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Video</a></li>
-              <li><a href="#">Profil</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a class="nav-link scroll" href="#about">About</a></li>
+              <li><a class="nav-link scroll" href="#video">Video</a></li>
+              <li><a class="nav-link scroll" href="#profil">Profil</a></li>
+              <li><a class="nav-link scroll" href="#projects">Projects</a></li>
+              <li><a class="nav-link scroll" href="#blog">Blog</a></li>
             </ul>
           </div>
           <!-- /.widget -->
@@ -964,22 +1054,8 @@
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/theme.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Smooth scrolling when clicking on the "Services" link
-      $('a[href="#homes"], a[href="#about"], a[href="#video"], a[href="#profil"], a[href="#blog"]').on('click', function (event) {
-        event.preventDefault();
-
-        // Scroll to the target section with a smooth animation
-        $('html, body').animate({
-          scrollTop: $($(this).attr('href')).offset().top
-        }, 800); // Adjust the animation speed as needed
-      });
-    });
-  </script>
 </body>
 
 </html>
